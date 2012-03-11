@@ -21,9 +21,10 @@
 //  Created by David Ebert on 3/10/12.
 //  Copyright (c) 2012 Beyond IT, LLC. All rights reserved.
 //
+
 #import "MyOpenGLView.h"
+
 #include <OpenGL/gl.h>
-#include <OpenGL/glu.h>
 
 @implementation MyOpenGLView
 
@@ -110,13 +111,9 @@
         if (viewerIsCrouching==NO)
         {
             viewerIsElevating=YES;
-            myTestCubeBumper =-0.25f;
+            myTestCubeBumper =-0.2f;
         }
         [self runScene];
-    }
-    else
-    {
-        NSLog(@"(unnamed key ID %i)",[event keyCode]);
     }
 }
 -(BOOL)acceptsFirstResponder
@@ -169,8 +166,19 @@
     glLoadIdentity();
     glFlush();
 }
+-(void) playWave:(NSString *)wav
+{
+    NSString *soundFilePath = [[NSBundle mainBundle] pathForResource:wav ofType:@"wav"];
+    NSURL *fileURL = [[NSURL alloc] initFileURLWithPath: soundFilePath];
+    AVAudioPlayer *newPlayer = [[AVAudioPlayer alloc] initWithContentsOfURL:fileURL error: nil];
+    [fileURL release];
+    [newPlayer prepareToPlay];
+    [newPlayer play];
+}
 -(void) drawRect:(NSRect) bounds
 {
+    // Play the welcome sound:
+    [self playWave:@"sound"];
     // Default values for jump versus crouch conflict management:
     viewerIsCrouching = NO;
     viewerIsElevating = NO;

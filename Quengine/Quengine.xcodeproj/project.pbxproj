@@ -16,6 +16,8 @@
 		E41C3E32150BC6EC00F84170 /* OpenGL.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E41C3E31150BC6EC00F84170 /* OpenGL.framework */; };
 		E41C3E35150BC76200F84170 /* MyOpenGLView.m in Sources */ = {isa = PBXBuildFile; fileRef = E41C3E34150BC76200F84170 /* MyOpenGLView.m */; };
 		E4FCA785150D16C00070CEED /* QuinnBox.png in Resources */ = {isa = PBXBuildFile; fileRef = E4FCA784150D16C00070CEED /* QuinnBox.png */; };
+		E4FCA78C150D1A540070CEED /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E4FCA78B150D1A540070CEED /* AVFoundation.framework */; };
+		E4FCA794150D1C970070CEED /* sound.wav in Resources */ = {isa = PBXBuildFile; fileRef = E4FCA793150D1C970070CEED /* sound.wav */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -36,6 +38,8 @@
 		E41C3E33150BC76200F84170 /* MyOpenGLView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MyOpenGLView.h; sourceTree = "<group>"; };
 		E41C3E34150BC76200F84170 /* MyOpenGLView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MyOpenGLView.m; sourceTree = "<group>"; };
 		E4FCA784150D16C00070CEED /* QuinnBox.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = QuinnBox.png; sourceTree = "<group>"; };
+		E4FCA78B150D1A540070CEED /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
+		E4FCA793150D1C970070CEED /* sound.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = sound.wav; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -43,6 +47,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E4FCA78C150D1A540070CEED /* AVFoundation.framework in Frameworks */,
 				E41C3E32150BC6EC00F84170 /* OpenGL.framework in Frameworks */,
 				E41C3E15150BC6B800F84170 /* Cocoa.framework in Frameworks */,
 			);
@@ -54,6 +59,7 @@
 		E41C3E05150BC6B800F84170 = {
 			isa = PBXGroup;
 			children = (
+				E4FCA793150D1C970070CEED /* sound.wav */,
 				E4FCA784150D16C00070CEED /* QuinnBox.png */,
 				E41C3E1A150BC6B800F84170 /* Quengine */,
 				E41C3E13150BC6B800F84170 /* Frameworks */,
@@ -74,6 +80,7 @@
 			children = (
 				E41C3E14150BC6B800F84170 /* Cocoa.framework */,
 				E41C3E31150BC6EC00F84170 /* OpenGL.framework */,
+				E4FCA78B150D1A540070CEED /* AVFoundation.framework */,
 				E41C3E16150BC6B800F84170 /* Other Frameworks */,
 			);
 			name = Frameworks;
@@ -165,6 +172,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E4FCA794150D1C970070CEED /* sound.wav in Resources */,
 				E4FCA785150D16C00070CEED /* QuinnBox.png in Resources */,
 				E41C3E1F150BC6B800F84170 /* InfoPlist.strings in Resources */,
 				E41C3E25150BC6B800F84170 /* Credits.rtf in Resources */,
