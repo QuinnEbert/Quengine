@@ -125,7 +125,8 @@
 }
 -(void) drawAnObject
 {
-    NSString *texFile = [[NSString alloc]initWithString:@"/Users/quinn/Dropbox/Projects/HollyHug/HollyPic.png"];
+    NSString *appPath = [[NSBundle mainBundle] bundlePath];
+    NSString *texFile = [[NSString alloc]initWithString:[appPath stringByAppendingString:@"/Contents/Resources/QuinnBox.png"]];
     TextureData td = [self loadPngTexture:texFile];
     static GLuint textureName;
     glEnable(GL_TEXTURE_2D);
