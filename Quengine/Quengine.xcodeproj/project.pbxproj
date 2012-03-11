@@ -1,0 +1,305 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		E41C3E15150BC6B800F84170 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E41C3E14150BC6B800F84170 /* Cocoa.framework */; };
+		E41C3E1F150BC6B800F84170 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = E41C3E1D150BC6B800F84170 /* InfoPlist.strings */; };
+		E41C3E21150BC6B800F84170 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = E41C3E20150BC6B800F84170 /* main.m */; };
+		E41C3E25150BC6B800F84170 /* Credits.rtf in Resources */ = {isa = PBXBuildFile; fileRef = E41C3E23150BC6B800F84170 /* Credits.rtf */; };
+		E41C3E28150BC6B800F84170 /* QuengineAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = E41C3E27150BC6B800F84170 /* QuengineAppDelegate.m */; };
+		E41C3E2B150BC6B900F84170 /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = E41C3E29150BC6B900F84170 /* MainMenu.xib */; };
+		E41C3E32150BC6EC00F84170 /* OpenGL.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E41C3E31150BC6EC00F84170 /* OpenGL.framework */; };
+		E41C3E35150BC76200F84170 /* MyOpenGLView.m in Sources */ = {isa = PBXBuildFile; fileRef = E41C3E34150BC76200F84170 /* MyOpenGLView.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		E41C3E10150BC6B800F84170 /* Quengine.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Quengine.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		E41C3E14150BC6B800F84170 /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = System/Library/Frameworks/Cocoa.framework; sourceTree = SDKROOT; };
+		E41C3E17150BC6B800F84170 /* AppKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppKit.framework; path = System/Library/Frameworks/AppKit.framework; sourceTree = SDKROOT; };
+		E41C3E18150BC6B800F84170 /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
+		E41C3E19150BC6B800F84170 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		E41C3E1C150BC6B800F84170 /* Quengine-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "Quengine-Info.plist"; sourceTree = "<group>"; };
+		E41C3E1E150BC6B800F84170 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		E41C3E20150BC6B800F84170 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		E41C3E22150BC6B800F84170 /* Quengine-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Quengine-Prefix.pch"; sourceTree = "<group>"; };
+		E41C3E24150BC6B800F84170 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.rtf; name = en; path = en.lproj/Credits.rtf; sourceTree = "<group>"; };
+		E41C3E26150BC6B800F84170 /* QuengineAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = QuengineAppDelegate.h; sourceTree = "<group>"; };
+		E41C3E27150BC6B800F84170 /* QuengineAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = QuengineAppDelegate.m; sourceTree = "<group>"; };
+		E41C3E2A150BC6B900F84170 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/MainMenu.xib; sourceTree = "<group>"; };
+		E41C3E31150BC6EC00F84170 /* OpenGL.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = OpenGL.framework; path = System/Library/Frameworks/OpenGL.framework; sourceTree = SDKROOT; };
+		E41C3E33150BC76200F84170 /* MyOpenGLView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MyOpenGLView.h; sourceTree = "<group>"; };
+		E41C3E34150BC76200F84170 /* MyOpenGLView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MyOpenGLView.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		E41C3E0D150BC6B800F84170 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E41C3E32150BC6EC00F84170 /* OpenGL.framework in Frameworks */,
+				E41C3E15150BC6B800F84170 /* Cocoa.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		E41C3E05150BC6B800F84170 = {
+			isa = PBXGroup;
+			children = (
+				E41C3E1A150BC6B800F84170 /* Quengine */,
+				E41C3E13150BC6B800F84170 /* Frameworks */,
+				E41C3E11150BC6B800F84170 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		E41C3E11150BC6B800F84170 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				E41C3E10150BC6B800F84170 /* Quengine.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		E41C3E13150BC6B800F84170 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				E41C3E14150BC6B800F84170 /* Cocoa.framework */,
+				E41C3E31150BC6EC00F84170 /* OpenGL.framework */,
+				E41C3E16150BC6B800F84170 /* Other Frameworks */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		E41C3E16150BC6B800F84170 /* Other Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				E41C3E17150BC6B800F84170 /* AppKit.framework */,
+				E41C3E18150BC6B800F84170 /* CoreData.framework */,
+				E41C3E19150BC6B800F84170 /* Foundation.framework */,
+			);
+			name = "Other Frameworks";
+			sourceTree = "<group>";
+		};
+		E41C3E1A150BC6B800F84170 /* Quengine */ = {
+			isa = PBXGroup;
+			children = (
+				E41C3E26150BC6B800F84170 /* QuengineAppDelegate.h */,
+				E41C3E27150BC6B800F84170 /* QuengineAppDelegate.m */,
+				E41C3E33150BC76200F84170 /* MyOpenGLView.h */,
+				E41C3E34150BC76200F84170 /* MyOpenGLView.m */,
+				E41C3E29150BC6B900F84170 /* MainMenu.xib */,
+				E41C3E1B150BC6B800F84170 /* Supporting Files */,
+			);
+			path = Quengine;
+			sourceTree = "<group>";
+		};
+		E41C3E1B150BC6B800F84170 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				E41C3E1C150BC6B800F84170 /* Quengine-Info.plist */,
+				E41C3E1D150BC6B800F84170 /* InfoPlist.strings */,
+				E41C3E20150BC6B800F84170 /* main.m */,
+				E41C3E22150BC6B800F84170 /* Quengine-Prefix.pch */,
+				E41C3E23150BC6B800F84170 /* Credits.rtf */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		E41C3E0F150BC6B800F84170 /* Quengine */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = E41C3E2E150BC6B900F84170 /* Build configuration list for PBXNativeTarget "Quengine" */;
+			buildPhases = (
+				E41C3E0C150BC6B800F84170 /* Sources */,
+				E41C3E0D150BC6B800F84170 /* Frameworks */,
+				E41C3E0E150BC6B800F84170 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Quengine;
+			productName = Quengine;
+			productReference = E41C3E10150BC6B800F84170 /* Quengine.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		E41C3E07150BC6B800F84170 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0420;
+				ORGANIZATIONNAME = "Beyond IT, LLC";
+			};
+			buildConfigurationList = E41C3E0A150BC6B800F84170 /* Build configuration list for PBXProject "Quengine" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = E41C3E05150BC6B800F84170;
+			productRefGroup = E41C3E11150BC6B800F84170 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				E41C3E0F150BC6B800F84170 /* Quengine */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		E41C3E0E150BC6B800F84170 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E41C3E1F150BC6B800F84170 /* InfoPlist.strings in Resources */,
+				E41C3E25150BC6B800F84170 /* Credits.rtf in Resources */,
+				E41C3E2B150BC6B900F84170 /* MainMenu.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		E41C3E0C150BC6B800F84170 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E41C3E21150BC6B800F84170 /* main.m in Sources */,
+				E41C3E28150BC6B800F84170 /* QuengineAppDelegate.m in Sources */,
+				E41C3E35150BC76200F84170 /* MyOpenGLView.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		E41C3E1D150BC6B800F84170 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				E41C3E1E150BC6B800F84170 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		E41C3E23150BC6B800F84170 /* Credits.rtf */ = {
+			isa = PBXVariantGroup;
+			children = (
+				E41C3E24150BC6B800F84170 /* en */,
+			);
+			name = Credits.rtf;
+			sourceTree = "<group>";
+		};
+		E41C3E29150BC6B900F84170 /* MainMenu.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				E41C3E2A150BC6B900F84170 /* en */,
+			);
+			name = MainMenu.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		E41C3E2C150BC6B900F84170 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_MISSING_PROTOTYPES = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.7;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+			};
+			name = Debug;
+		};
+		E41C3E2D150BC6B900F84170 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
+				COPY_PHASE_STRIP = YES;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_MISSING_PROTOTYPES = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.7;
+				SDKROOT = macosx;
+			};
+			name = Release;
+		};
+		E41C3E2F150BC6B900F84170 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Quengine/Quengine-Prefix.pch";
+				INFOPLIST_FILE = "Quengine/Quengine-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		E41C3E30150BC6B900F84170 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Quengine/Quengine-Prefix.pch";
+				INFOPLIST_FILE = "Quengine/Quengine-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		E41C3E0A150BC6B800F84170 /* Build configuration list for PBXProject "Quengine" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E41C3E2C150BC6B900F84170 /* Debug */,
+				E41C3E2D150BC6B900F84170 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		E41C3E2E150BC6B900F84170 /* Build configuration list for PBXNativeTarget "Quengine" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E41C3E2F150BC6B900F84170 /* Debug */,
+				E41C3E30150BC6B900F84170 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = E41C3E07150BC6B800F84170 /* Project object */;
+}
